@@ -10,22 +10,21 @@
  *   - y Move Caps Lock back to Esc.
  *   - y Move Esc to Delete.
  *   - y Move Delete to upper blank.
- *   - y Add Windows to lower blank.
+ *   - y Add left-Windows (LGUI) to lower blank.
  *   - y Replace old caps lock with em dash/pound combo.
  * Right:
  *   - y DVORAK across main keys.
- *   - y Add Windows to lower blank.
- *   - y Restore Alt to Windows.
+ *   - y Add left-Windows to lower blank (RGUI, the right version, does nothing).
+ *   - y Restore (left) Alt to Windows (RALT, the right version, just .. FFS).
  *   - y Add Print Screen to upper blank.
  *   - y Move _- to /?.
  *   - y Move /? to \|.
  *   - y Move \| to _-.
  */
 
-/* Requires possibly-unapplied patch, sigh. */
+/* Unicode stuff requires unapplied patch, sigh: https://github.com/urob/zmk-nodefree-config */
 /*                   name                   unshifted                    shifted */
 /*ZMK_UNICODE_PAIR( emd_pnd,  N2, N0, N1, N4,  N0, N0, A, N3 ) em dash (2014)/pound (A3) combo */
-
 /*ZMK_UNICODE_SINGLE( emd_pnd,  N2, N0, N1, N4 ) em dash (2014) */
 
 / {
@@ -50,7 +49,7 @@
       bindings = <
         &kp EQUAL    &kp N1        &kp N2      &kp N3   &kp N4     &kp N5 &tog 1                                                                     &mo 3     &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp BSLH
         &kp TAB      &kp SQT       &kp COMMA   &kp DOT  &kp P      &kp Y  &kp DEL                                                                    &kp PSCRN &kp F  &kp G  &kp C     &kp R    &kp L    &kp MINUS
-        &kp CAPSLOCK &kp A         &kp O       &kp E    &kp U      &kp I  &kp LGUI        &kp LCTRL &kp LALT             &kp RALT  &kp RCTRL         &kp RGUI  &kp D  &kp H  &kp T     &kp N    &kp S    &kp SLASH
+        &kp CAPSLOCK &kp A         &kp O       &kp E    &kp U      &kp I  &kp LGUI        &kp LCTRL &kp LALT             &kp LALT  &kp RCTRL         &kp LGUI  &kp D  &kp H  &kp T     &kp N    &kp S    &kp SLASH
         &kp LSHFT    &kp SEMICOLON &kp Q       &kp J    &kp K      &kp X        &none     &none     &kp HOME &none &none &kp PG_UP &none     &none             &kp B  &kp M  &kp W     &kp V    &kp Z    &kp RSHFT
         &mo 2        &kp GRAVE     &kp CAPS    &kp LEFT &kp RIGHT               &kp BKSP  &kp ESC   &kp END              &kp PG_DN &kp ENTER &kp SPACE                &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
         >;
