@@ -24,9 +24,9 @@
 
 /* Requires possibly-unapplied patch, sigh. */
 /*                   name                   unshifted                    shifted */
-/*ZMK_UNICODE_PAIR( emd_pnd,  /* 2014 */ N2, N0, N1, N4,  /* 00A3 */ N0, N0, A, N3 ) /* em dash/pound combo */
+/*ZMK_UNICODE_PAIR( emd_pnd,  N2, N0, N1, N4,  N0, N0, A, N3 ) em dash (2014)/pound (A3) combo */
 
-ZMK_UNICODE_SINGLE( emd_pnd,  /* 2014 */ N2, N0, N1, N4 ) /* em dash */
+ZMK_UNICODE_SINGLE( emd_pnd,  N2, N0, N1, N4 ) /* em dash (2014) */
 
 / {
     behaviors {
