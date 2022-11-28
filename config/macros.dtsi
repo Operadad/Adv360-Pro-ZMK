@@ -38,6 +38,5 @@ macro_kinesis: macro_devlong{
 compatible = "zmk,behavior-macro";
 label = "macro_kinesis";
 #binding-cells = <0>;
-bindings = <&kp D>, <&kp E>, <&kp V>, <&kp E>, <&kp L>, <&kp O>, <&kp P>, <&kp E>, <&kp R>, <&kp ENTER>,
-<&kp S>, <&kp E>, <&kp t>, <&kp LS(I)>, <&kp K>, <&kp U>, <&kp T>, <&kp T>;
+bindings = <&kp D>, <&kp E>, <&kp V>, <&kp E>, <&kp L>, <&kp O>, <&kp P>, <&kp E>, <&kp R>, <&kp ENTER>, <&kp S>, <&kp E>, <&kp t>, <&kp LS(I)>, <&kp K>, <&kp U>, <&kp T>, <&kp T>;
 };
