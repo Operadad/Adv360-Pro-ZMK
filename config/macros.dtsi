@@ -1,3 +1,9 @@
+macro_new_pw: macro_new_pw{
+compatible = "zmk,behavior-macro";
+label = "macro_new_pw";
+#binding-cells = <0>;
+bindings = <&kp LS(G)>, <&kp O>, <&kp SPACE>, <&kp LS(S)>, <&kp EXCL>, <&kp N>, <&kp N9>, <&kp SPACE>, <&kp RS(O)>, <&kp P>, <&kp N3>, <&kp R>, <&kp A>;
+};
 macro_macro_fred: macro_macro_fred{
 compatible = "zmk,behavior-macro";
 label = "macro_macro_fred";
